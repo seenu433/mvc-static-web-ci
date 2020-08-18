@@ -28,8 +28,6 @@ spec:
           mountPath: /app/wwwroot/css/site.css
           subPath: site.css
       restartPolicy: Always
-      imagePullSecrets:
-      - name: regcred
       volumes:
       - name: css-file-configmap-volume
         configMap:
